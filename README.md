@@ -25,7 +25,7 @@ mvn spring-boot:run
 ```
 
 ## Dependencias
-* Spring 2.5.4
+* Spring 2.5.14
 * Swagger
 * Actuator
 * H2
