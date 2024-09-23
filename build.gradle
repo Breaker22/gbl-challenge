@@ -1,0 +1,33 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.14'
+	id 'java'
+}
+
+group = 'ar.com.gbl'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = '8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation("org.springframework.boot:spring-boot-starter-validation")
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'com.h2database:h2'
+	implementation 'org.projectlombok:lombok'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	implementation('io.springfox:springfox-swagger2:3.0.0')
+	implementation('io.springfox:springfox-boot-starter:3.0.0')
+	implementation('io.springfox:springfox-swagger-ui:2.9.2')
+}
+
+test {
+	useJUnitPlatform()
+}

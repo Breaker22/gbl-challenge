@@ -17,11 +17,11 @@ http://localhost:8080/actuator/health
 ## Ejecucion de proyecto
 ```
 1) Descargar el proyecto con git clone
-2) Instalar mvn y java 8
+2) Instalar gradle y java 8
 3) Abrir una consola cmd y ejecutar lo siguiente:
 
-mvn clean install
-mvn spring-boot:run
+gradle build
+./gradlew bootRun
 ```
 
 ## Dependencias
